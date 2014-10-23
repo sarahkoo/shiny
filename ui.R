@@ -8,7 +8,7 @@ shinyUI(pageWithSidebar(
   headerPanel("Diamonds Explorer"),
   
   sidebarPanel(
-    
+    style = 'color:blue',
     sliderInput('sampleSize', 'Sample Size', min=1, max=nrow(dataset),
                 value=min(1000, nrow(dataset)), step=500, round=0),
     
